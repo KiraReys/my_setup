@@ -1,4 +1,5 @@
-#!/bin/bash
+#Setup for new installed linux debian/ubuntu !
+#by Kira Reys
 
 echo "Installing..."
 
@@ -25,9 +26,6 @@ cd ~/Tools/
 git clone https://github.com/sqlmapproject/sqlmap
 cd ~/Tools/
 
-git clone https://github.com/OWASP/Amass
-cd ~/Tools/
-
 git clone https://github.com/projectdiscovery/subfinder
 cd ~/Tools/
 
@@ -37,6 +35,6 @@ cd ~/Tools/
 git clone https://github.com/sullo/nikto
 cd ~/Tools/
 
-echo "Done!"
+echo "Finished! type `cd ~/Tools/` to change the directory!"
 
 
