@@ -34,7 +34,10 @@ cd ~/Tools/
 git clone https://github.com/projectdiscovery/subfinder
 cd ~/Tools/
 
-git clone https://github.com/michenriksen/gitrob
+git clone https://github.com/projectdiscovery/nuclei.git
+cd nuclei/v2/cmd/nuclei
+go build
+mv nuclei /usr/local/bin/
 cd ~/Tools/
 
 git clone https://github.com/sullo/nikto
@@ -45,6 +48,7 @@ cd ffuf
 go get
 go build
 
+cd ~/
 echo "Finished! type `cd ~/Tools/` to change the directory!"
 
 
