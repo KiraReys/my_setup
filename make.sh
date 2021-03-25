@@ -8,9 +8,14 @@ sudo apt-get -y upgrade
 
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python-pip
-sudo apt install golang-go
+if [[ -z "$GOPATH" ]];then
+  sudo apt install golang-go
+fi
+
 sudo apt-get install net-tools
 sudo apt-get install -y nmap
+
+#################################################
 
 mkdir ~/Tools
 cd ~/Tools
