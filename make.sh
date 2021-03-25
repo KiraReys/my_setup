@@ -49,6 +49,6 @@ go get
 go build
 
 cd ~/
-echo "Finished! type `cd ~/Tools/` to change the directory!"
+echo "Finished! type cd ~/Tools/ to change the directory!"
 
 
