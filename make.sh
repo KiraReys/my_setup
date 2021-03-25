@@ -40,6 +40,11 @@ cd ~/Tools/
 git clone https://github.com/sullo/nikto
 cd ~/Tools/
 
+git clone https://github.com/ffuf/ffuf
+cd ffuf
+go get
+go build
+
 echo "Finished! type `cd ~/Tools/` to change the directory!"
 
 
