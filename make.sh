@@ -28,7 +28,7 @@ cd ~/Tools/
 git clone https://github.com/maurosoria/dirsearch.git
 cd ~/Tools/
 
-git clone https://github.com/sqlmapproject/sqlmap
+sudo apt install sqlmap
 cd ~/Tools/
 
 git clone https://github.com/projectdiscovery/subfinder
