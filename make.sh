@@ -23,6 +23,8 @@ cd ~/Tools
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
 pip install -r requirements.txt
+##Now with apt
+sudo apt install sublist3r
 cd ~/Tools/
 
 git clone https://github.com/maurosoria/dirsearch.git
