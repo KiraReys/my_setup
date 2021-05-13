@@ -1,2 +1,2 @@
-## My Tool Setup For Bug Hunting!
-### (It changes often)
+## My Tool Setup
+### by Kira Reys
