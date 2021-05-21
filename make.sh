@@ -22,7 +22,7 @@ cd ~/Tools
 
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ##Now with apt
 sudo apt install sublist3r
 cd ~/Tools/
@@ -42,7 +42,9 @@ go build
 mv nuclei /usr/local/bin/
 cd ~/Tools/
 
-git clone https://github.com/sullo/nikto
+git clone https://github.com/devanshbatham/ParamSpider
+cd ParamSpider
+pip3 install -r requirements.txt
 cd ~/Tools/
 
 git clone https://github.com/ffuf/ffuf
