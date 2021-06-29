@@ -1,7 +1,10 @@
-#Setup for new installed linux debian/ubuntu !
-#by Kira Reys
+# Setup for new installed Linux Debian/Ubuntu
+# Made by Kira Reys
+#################################################
 
-echo "Installing..."
+
+echo "Installing the following tools..."
+echo "nmap, JohnTheRipper, Sublist3r, searchsploit, dirsearch, sqlmap, subfinder, nuclei, ParamSpider, ffuf"
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -15,6 +18,8 @@ fi
 sudo apt-get install net-tools
 sudo apt-get install -y nmap
 
+sudo apt-get install john
+
 #################################################
 
 mkdir ~/Tools
@@ -23,11 +28,15 @@ cd ~/Tools
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
 pip3 install -r requirements.txt
-##Now with apt
-sudo apt install sublist3r
+
+sudo apt install sublist3r #Now with APT
 cd ~/Tools/
 
 git clone https://github.com/maurosoria/dirsearch.git
+cd ~/Tools/
+
+sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploitdb
+sudo ln -sf /opt/exploitdb/searchsploit /usr/local/bin/searchsploit
 cd ~/Tools/
 
 sudo apt install sqlmap
@@ -53,6 +62,9 @@ go get
 go build
 
 cd ~/
-echo "Finished! type cd ~/Tools/ to change the directory!"
+
+echo "=================================================="
+echo "Finished! Type cd ~/Tools/ to change the directory"
+echo "=================================================="
 
 
