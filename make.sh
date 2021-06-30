@@ -42,7 +42,7 @@ cd ~/Tools/
 sudo apt install sqlmap
 cd ~/Tools/
 
-git clone https://github.com/projectdiscovery/subfinder
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 cd ~/Tools/
 
 git clone https://github.com/projectdiscovery/nuclei.git
