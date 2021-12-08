@@ -67,9 +67,9 @@ go get github.com/tomnomnom/waybackurls
 
 cd ~/
 
+git clone https://github.com/algotech/dotaliases.git .aliases
+
 clear
 echo "=================================================="
 echo "Finished! Type cd ~/Tools/ to change the directory"
 echo "=================================================="
-
-
