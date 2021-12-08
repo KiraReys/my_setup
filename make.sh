@@ -2,8 +2,7 @@
 # Made by Kira Reys
 #################################################
 
-
-echo "Installing the following tools..."
+printf " ! Starting the script ! \n Installing the following tools..."
 echo "nmap, JohnTheRipper, Sublist3r, searchsploit, dirsearch, sqlmap, subfinder, nuclei, ParamSpider, ffuf"
 
 sudo apt-get -y update
@@ -14,6 +13,8 @@ sudo apt-get install -y python-pip
 if [[ -z "$GOPATH" ]];then
   sudo apt install golang-go
 fi
+
+export GOPATH=$HOME/go
 
 sudo apt-get install net-tools
 sudo apt-get install -y nmap
@@ -58,11 +59,15 @@ cd ~/Tools/
 
 git clone https://github.com/ffuf/ffuf
 cd ffuf
-go get
-go build
+go get -u github.com/ffuf/ffuf
+
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/assetfinder
+go get github.com/tomnomnom/waybackurls
 
 cd ~/
 
+clear
 echo "=================================================="
 echo "Finished! Type cd ~/Tools/ to change the directory"
 echo "=================================================="
