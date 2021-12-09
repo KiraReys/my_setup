@@ -21,6 +21,11 @@ sudo apt-get install -y nmap
 
 sudo apt-get install john
 
+sudo apt-get install gem
+sudo apt-get install ruby
+sudo apt-get install ruby-dev
+sudo gem install wpscan
+
 #################################################
 
 mkdir ~/Tools
