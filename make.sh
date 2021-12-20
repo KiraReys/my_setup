@@ -15,6 +15,7 @@ if [[ -z "$GOPATH" ]];then
 fi
 
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 sudo apt-get install net-tools
 sudo apt-get install -y nmap
